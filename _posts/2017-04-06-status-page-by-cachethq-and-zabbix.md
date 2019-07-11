@@ -135,7 +135,7 @@ Under this service Add child and here you should add the respective shared serve
 
 ## Installing Zabbix-Cachet
 
-1. Docker Installation
+### Docker Installation
 
 I prefer this method on latest centos as it hazel free. 
 
@@ -158,13 +158,12 @@ In this file only two portion needs to be touched.
 
 
    ```bash
-	 docker run --name zabbix-cachet -v /etc/zabbix-cachet.yml:/config.yml qk4l/zabbix-cachet
-
+docker run --name zabbix-cachet -v /etc/zabbix-cachet.yml:/config.yml qk4l/zabbix-cachet
    ```
 	 
-2. APT
+### Using APT
 
-   1. Add official PPA for Zabbix-Cachet:
+1. Add official PPA for Zabbix-Cachet:
 
 
 ```bash
@@ -174,21 +173,17 @@ apt-get update
 ```
 
 
-   2. Install the package:
-
-
+2. Install the package:
 ```bash
 apt-get install zabbix-cachet
 ```
 
-   3. Configure the zabbix-cachet.yml
-
-
+3. Configure the zabbix-cachet.yml
 ```bash
 nano /etc/zabbix-cachet.yml
 ```
 
-   4. Restart the service:
+4. Restart the service:
 
 
 ```bash
