@@ -155,8 +155,13 @@ In this file only two portion needs to be touched.
 
    2. Now run docker container using the command:
 
-   > docker run --name zabbix-cachet -v /etc/zabbix-cachet.yml:/config.yml qk4l/zabbix-cachet
 
+
+   ```bash
+	 docker run --name zabbix-cachet -v /etc/zabbix-cachet.yml:/config.yml qk4l/zabbix-cachet
+
+   ```
+	 
 2. APT
 
    1. Add official PPA for Zabbix-Cachet:
